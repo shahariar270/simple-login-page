@@ -43,8 +43,10 @@ input:hover{
     border-bottom-color: #21d4fd;
 }
 button{
-    background-color: #21d4fd;
+    background: -webkit-linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
     padding: 20px 0;
+    color: white;
+    font-size: 20px;
    border-radius: 10% 20%;
 
 }
@@ -67,4 +69,41 @@ button{
     padding: 10px;
     
     background-color: #fff;
+}
+@media (max-width: 600px) {
+    main {
+        width: 95%;
+    }@media (max-width: 600px) {
+        main {
+            width: 95%;
+        }
+    
+        .logo img {
+            width: 80px;
+            height: 80px;
+        }
+    
+        #watch {
+            font-size: 1.2em;
+        }
+    
+        .formHandle input,
+        #btn {
+            font-size: 0.9em;
+        }
+    }
+
+    .logo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #watch {
+        font-size: 1.2em;
+    }
+
+    .formHandle input,
+    #btn {
+        font-size: 0.9em;
+    }
 }
