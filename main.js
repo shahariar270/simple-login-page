@@ -9,17 +9,22 @@ const aleartMe = document.querySelector('h3');
 //massage button click event
 btn.addEventListener("click", () => {
     if (input.value === "") {
+
         setTimeout(() => {
+
+
             input.classList.add('new-border');
             password.classList.add('new-border');
             aleartMe.innerHTML = `please enter correct email/password`;
             aleartMe.classList.add('aleartMe');
         }, 1000);
+
+
     } else {
         input.classList.remove('new-border');
         password.classList.remove('new-border');
         aleartMe.classList.remove('aleartMe');
-        aleartMe.innerHTML = ''; 
+        aleartMe.innerHTML = ``; 
     }
 });
 
@@ -28,10 +33,10 @@ changeElement.addEventListener("click", () => {
     
         if (password.type === 'password') {
             password.setAttribute('type', 'text');
-            changeElement.innerHTML = '<i class="fas fa-eye-slash"></i>';
+            changeElement.innerHTML = '<i class="fas fa-eye"></i>';
         } else {
             password.setAttribute('type', 'password');
-            changeElement.innerHTML = '<i class="fas fa-eye"></i>';
+            changeElement.innerHTML = '<i class="fas fa-eye-slash"></i>';
         }
 
 
